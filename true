@@ -1,0 +1,141 @@
+[1591045660.259][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 44546
+[1591045660.259][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1591045660.986][INFO]: [e594ad0667df8258bbbd459e3b9d1888] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1591045660.989][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1591045660.990][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1591045660.999][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\Owner\AppData\Local\Temp\scoped_dir10868_295175226\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Owner\AppData\Local\Temp\scoped_dir10868_1723896271" data:,
+[1591045661.972][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1591045663.984][INFO]: [e594ad0667df8258bbbd459e3b9d1888] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "83.0.4103.61",
+      "chrome": {
+         "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
+         "userDataDir": "C:\\Users\\Owner\\AppData\\Local\\Temp\\scoped_dir10868_1723896271"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:50501"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "e594ad0667df8258bbbd459e3b9d1888"
+}
+[1591045664.060][INFO]: [e594ad0667df8258bbbd459e3b9d1888] COMMAND SetTimeouts {
+   "implicit": 15000
+}
+[1591045664.060][INFO]: [e594ad0667df8258bbbd459e3b9d1888] RESPONSE SetTimeouts
+[1591045664.067][INFO]: [e594ad0667df8258bbbd459e3b9d1888] COMMAND Navigate {
+   "url": "https://www.saucedemo.com/"
+}
+[1591045664.067][INFO]: Waiting for pending navigations...
+[1591045664.071][INFO]: Done waiting for pending navigations. Status: ok
+[1591045664.389][INFO]: Waiting for pending navigations...
+[1591045664.725][INFO]: Done waiting for pending navigations. Status: ok
+[1591045664.725][INFO]: [e594ad0667df8258bbbd459e3b9d1888] RESPONSE Navigate
+[1591045664.837][INFO]: [e594ad0667df8258bbbd459e3b9d1888] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#txtUsername"
+}
+[1591045664.837][INFO]: Waiting for pending navigations...
+[1591045664.838][INFO]: Done waiting for pending navigations. Status: ok
+[1591045679.869][INFO]: Waiting for pending navigations...
+[1591045679.870][INFO]: Done waiting for pending navigations. Status: ok
+[1591045679.870][INFO]: [e594ad0667df8258bbbd459e3b9d1888] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=83.0.4103.61)
+[1591045679.924][INFO]: [e594ad0667df8258bbbd459e3b9d1888] COMMAND Quit {
+
+}
+[1591045680.188][INFO]: [e594ad0667df8258bbbd459e3b9d1888] RESPONSE Quit

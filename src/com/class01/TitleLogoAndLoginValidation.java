@@ -6,14 +6,14 @@ import org.testng.annotations.*;
 import com.utils.CommonMethods;
 import com.utils.ConfigsReader;
 
-public class TitleLogoAndLoginValidation extends CommonMethods {
+public class TitleLogoAndLoginValidation extends CommonMethods {//will also extend BaseClass
 
-	@BeforeMethod
+	@BeforeMethod// will execute before every method 
 	public void openAndNavigate() {
 		setUp();
 	}
 
-	@AfterMethod
+	@AfterMethod//will be after each method
 	public void quitBrowser() {
 		tearDown();
 	}
@@ -21,7 +21,7 @@ public class TitleLogoAndLoginValidation extends CommonMethods {
 	// @Test
 	public void titleValidation() throws Exception {
 		String expectedTitle = "Human Management System";
-		String actualTitle = driver.getTitle();
+		String actualTitle = driver.getTitle();//we use driver bc in common methods
 		if (expectedTitle.equals(actualTitle)) {
 			System.out.println("titleValidation passed");
 		} else {
@@ -33,7 +33,7 @@ public class TitleLogoAndLoginValidation extends CommonMethods {
 
 	// @Test
 	public void logoValidation() throws Exception {
-		String logoPath = "//div[@id='divLogo']/img";
+		String logoPath = "//div[@id='divLogo']/img";//we add /img to find image
 		WebElement logo = driver.findElement(By.xpath(logoPath));
 		boolean isDisplayed = logo.isDisplayed();
 		if (isDisplayed) {
@@ -48,11 +48,12 @@ public class TitleLogoAndLoginValidation extends CommonMethods {
 	@Test
 	public void validLogin() throws InterruptedException {
 		WebElement username = driver.findElement(By.id("txtUsername"));
-//		sendText(username, "Admin");
-		sendText(username, ConfigsReader.getProperty("username"));
+//		sendText(username, "Admin");    hardcoding
+		sendText(username, ConfigsReader.getProperty("username"));//we can get the usernae from 
+																//configs folder
 
 		WebElement password = driver.findElement(By.id("txtPassword"));
-		sendText(password, ConfigsReader.getProperty("password"));
+		sendText(password, ConfigsReader.getProperty("password"));//get pass form configs folder
 
 		click(driver.findElement(By.id("btnLogin")));
 

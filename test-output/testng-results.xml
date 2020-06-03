@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="138" started-at="2020-05-26T17:03:07 EDT" finished-at="2020-05-26T17:03:07 EDT">
+  <suite name="Default suite" duration-ms="96" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="138" started-at="2020-05-26T17:03:07 EDT" finished-at="2020-05-26T17:03:07 EDT">
-      <class name="com.class01.TestNGDemo">
-        <test-method status="PASS" signature="testOne()[pri:0, instance:com.class01.TestNGDemo@6e6c3152]" name="testOne" duration-ms="27" started-at="2020-05-26T17:03:07 EDT" finished-at="2020-05-26T17:03:07 EDT">
+    <test name="Default test" duration-ms="96" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
+      <class name="com.class02.TaskOne">
+        <test-method status="PASS" signature="fourthMethod()[pri:0, instance:com.class02.TaskOne@79be0360]" name="fourthMethod" duration-ms="10" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:com.class01.TestNGDemo@6e6c3152]" name="testThree" duration-ms="4" started-at="2020-05-26T17:03:07 EDT" finished-at="2020-05-26T17:03:07 EDT">
+        </test-method> <!-- fourthMethod -->
+        <test-method status="PASS" signature="thirdMethod()[pri:1, instance:com.class02.TaskOne@79be0360]" name="thirdMethod" duration-ms="3" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testThree -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:com.class01.TestNGDemo@6e6c3152]" name="testTwo" duration-ms="3" started-at="2020-05-26T17:03:07 EDT" finished-at="2020-05-26T17:03:07 EDT">
+        </test-method> <!-- thirdMethod -->
+        <test-method status="PASS" signature="secondMethod()[pri:2, instance:com.class02.TaskOne@79be0360]" name="secondMethod" duration-ms="4" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTwo -->
-      </class> <!-- com.class01.TestNGDemo -->
+        </test-method> <!-- secondMethod -->
+        <test-method status="PASS" signature="firstMethod()[pri:3, instance:com.class02.TaskOne@79be0360]" name="firstMethod" duration-ms="7" started-at="2020-06-03T16:38:49 EDT" finished-at="2020-06-03T16:38:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstMethod -->
+      </class> <!-- com.class02.TaskOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

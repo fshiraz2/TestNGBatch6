@@ -9,12 +9,14 @@ import com.pages.DashboardPageElements;
 import com.pages.LoginPageElements;
 import com.utils.CommonMethods;
 import com.utils.ConfigsReader;
-
+//two test cases open chrom go to website, enter valid username and password 
+//and do another time but leave password empty
 public class HW extends CommonMethods {
+	
 
 	@BeforeMethod
 	public void openBrowserAndNavigate() {
-		setUp();
+		setUp();//is in  base class but better to extend common methods bc extends base class
 	}
 
 	@AfterMethod
@@ -33,14 +35,14 @@ public class HW extends CommonMethods {
 	public void validLogin() {
 		// WebElement username = driver.findElement(By.id("txtUsername"));
 
-		// 1st way
-		// username.sendKeys(ConfigsReader.getProperty("username"));
+		// 1st way (unproffesional way)
+		// username.sendKeys(ConfigsReader.getProperty("username"));//is selenium def method
 
 		// 2nd way
-		// sendText(username, ConfigsReader.getProperty("username"));
+		// sendText(username, ConfigsReader.getProperty("username"));//in common methods
 
-		// 3rd way, using Page Object Model and PageFactory
-		LoginPageElements login = new LoginPageElements();
+		// 3rd way, using Page Object Model and PageFactoryz(loginpageelemnts)
+		LoginPageElements login = new LoginPageElements();//comes from loginpageelemnts class
 		sendText(login.username, ConfigsReader.getProperty("username"));
 
 		sendText(login.password, ConfigsReader.getProperty("password"));

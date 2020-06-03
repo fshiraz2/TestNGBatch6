@@ -1,18 +1,24 @@
 package com.utils;
 
 
+
+import java.io.File;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class CommonMethods extends PageInitializer {
 
@@ -242,7 +248,21 @@ public class CommonMethods extends PageInitializer {
 		getJSObject().executeScript("window.scrollBy(0,-" + pixel + ")");
 	}
 
-	
+	/**
+	 * This Method will take a screenshot
+	 * 
+	 * @param filename
+	 */
+	public static void takeScreenshot(String filename) {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File file = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(file, new File("screenshot/" + filename + ".png"));
+		} catch (Exception ex) {
+			System.out.println("Cannot take screenshot!");
+		}
+	}
+
 	public static void wait(int second) {
 		try {
 			Thread.sleep(second * 1000);
